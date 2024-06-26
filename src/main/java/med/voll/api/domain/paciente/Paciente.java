@@ -40,7 +40,7 @@ public class Paciente {
         this.direccion = new Direccion(datos.direccion());
     }
 
-    public void actualizarInformacoes(DatosActualizacionPaciente datos) {
+    public void actualizarInformaciones(DatosActualizacionPaciente datos) {
         if (datos.nombre() != null) {
             this.nombre = datos.nombre();
         }
@@ -51,62 +51,6 @@ public class Paciente {
             this.direccion.actualizarDireccion(datos.direccion());
         }
 
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getDocumento() {
-        return documento;
-    }
-
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
-
-    public Direccion getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(Direccion direccion) {
-        this.direccion = direccion;
-    }
-
-    public Boolean getActivo() {
-        return activo;
-    }
-
-    public void setActivo(Boolean activo) {
-        this.activo = activo;
     }
 
     public void eliminar() {

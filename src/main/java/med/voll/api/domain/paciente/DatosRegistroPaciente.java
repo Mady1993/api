@@ -22,5 +22,6 @@ public record DatosRegistroPaciente (
         @NotBlank
         String documento,
 
-        @NotNull @Valid DatosDireccion direccion) {
+        @NotNull @Valid
+        DatosDireccion direccion) {
 }
